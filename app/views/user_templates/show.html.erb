@@ -14,7 +14,12 @@
   </dt>
 
   <dd>
-    form
+    <form action="/update_user/<%= @the_user.id %>" method="post">
+      <label for="username_box">Username</label>
+      <input id="username_box" type="text" name="query_username" value="<%= @the_user.username %>">
+
+      <button>Update user</button>
+    </form>
   </dd>
 </dl>
 
